@@ -8,3 +8,10 @@ export interface Question {
   score: number;
   difficulty: "easy" | "medium" | "difficult";
 }
+
+export interface Quiz {
+  id: number;
+  title: string;
+  score: number;
+  questions: Question[];
+}
