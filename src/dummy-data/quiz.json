@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "id": 1,
+      "id": "1",
       "question_type": "MCQ",
       "prompt": "What is the capital city of Norway",
       "correct_answer": "Oslo",
@@ -10,7 +10,7 @@
       "difficulty": "easy"
     },
     {
-      "id": 2,
+      "id": "2",
       "question_type": "MCQ",
       "prompt": "Who is the author of Romeo & Juliet",
       "correct_answer": "William Shakespere",
@@ -18,18 +18,8 @@
       "score": 5,
       "difficulty": "easy"
     },
-
     {
-      "id": 3,
-      "question_type": "MCQ",
-      "prompt": "What is the capital of France?",
-      "correct_answer": "Paris",
-      "wrong_answers": ["Berlin", "Madrid", "Rome"],
-      "score": 5,
-      "difficulty": "easy"
-    },
-    {
-      "id": 4,
+      "id": "4",
       "question_type": "MCQ",
       "prompt": "Which element has the chemical symbol 'O'?",
       "correct_answer": "Oxygen",
@@ -38,7 +28,7 @@
       "difficulty": "easy"
     },
     {
-      "id": 5,
+      "id": "5",
       "question_type": "MCQ",
       "prompt": "Who painted the Mona Lisa?",
       "correct_answer": "Leonardo da Vinci",
@@ -47,7 +37,7 @@
       "difficulty": "medium"
     },
     {
-      "id": 6,
+      "id": "6",
       "question_type": "MCQ",
       "prompt": "Which planet is known as the Red Planet?",
       "correct_answer": "Mars",
@@ -56,7 +46,7 @@
       "difficulty": "easy"
     },
     {
-      "id": 7,
+      "id": "7",
       "question_type": "MCQ",
       "prompt": "What is the largest mammal?",
       "correct_answer": "Blue Whale",
@@ -65,7 +55,7 @@
       "difficulty": "easy"
     },
     {
-      "id": 8,
+      "id": "8",
       "question_type": "MCQ",
       "prompt": "Who discovered penicillin?",
       "correct_answer": "Alexander Fleming",
@@ -74,7 +64,7 @@
       "difficulty": "medium"
     },
     {
-      "id": 9,
+      "id": "9",
       "question_type": "MCQ",
       "prompt": "Which country hosted the 2016 Summer Olympics?",
       "correct_answer": "Brazil",
@@ -83,7 +73,7 @@
       "difficulty": "medium"
     },
     {
-      "id": 10,
+      "id": "10",
       "question_type": "MCQ",
       "prompt": "Which language is the most spoken worldwide?",
       "correct_answer": "Mandarin Chinese",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import QuestionList from "./components/questions/QuestionList";
-import QuestionDetails from "./components/questions/Question";
+import QuestionDetails from "./components/questions/QuestionDetails";
 
 function App() {
   return (

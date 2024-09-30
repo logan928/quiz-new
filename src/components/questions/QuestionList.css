@@ -1,0 +1,104 @@
+/* Main container for the question list */
+.question-list {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the question list */
+.question-list h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the 'Add Question' button */
+.question-list .btn-primary {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.question-list .btn-primary:hover {
+  background-color: #218838;
+  transition: background-color 0.3s ease;
+}
+
+/* List of questions */
+.question-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.question-list li {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.question-list li:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Question title (prompt) */
+.question-list h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+/* Question details (type, score, difficulty) */
+.question-list p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Action buttons (View, Edit, Delete) */
+.question-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.question-actions .btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.question-actions .btn-secondary {
+  background-color: #007bff;
+}
+
+.question-actions .btn-secondary:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+.question-actions .btn-danger {
+  background-color: #dc3545;
+}
+
+.question-actions .btn-danger:hover {
+  background-color: #c82333;
+  transition: background-color 0.3s ease;
+}
