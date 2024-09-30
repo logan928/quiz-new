@@ -5,7 +5,11 @@
       "question_type": "MCQ",
       "prompt": "What is the capital city of Norway",
       "correct_answer": "Oslo",
-      "wrong_answers": ["Stockholm", "London", "Bergen"],
+      "wrong_answers": [
+        "Stockholm",
+        "London",
+        "Bergen"
+      ],
       "score": 5,
       "difficulty": "easy"
     },
@@ -14,7 +18,11 @@
       "question_type": "MCQ",
       "prompt": "Who is the author of Romeo & Juliet",
       "correct_answer": "William Shakespere",
-      "wrong_answers": ["Alexander Dumas", "Victor Hugo", "TS Elliot"],
+      "wrong_answers": [
+        "Alexander Dumas",
+        "Victor Hugo",
+        "TS Elliot"
+      ],
       "score": 5,
       "difficulty": "easy"
     },
@@ -23,16 +31,24 @@
       "question_type": "MCQ",
       "prompt": "Which element has the chemical symbol 'O'?",
       "correct_answer": "Oxygen",
-      "wrong_answers": ["Gold", "Osmium", "Iron"],
+      "wrong_answers": [
+        "Gold",
+        "Osmium",
+        "Iron"
+      ],
       "score": 5,
-      "difficulty": "easy"
+      "difficulty": "difficult"
     },
     {
       "id": "5",
       "question_type": "MCQ",
       "prompt": "Who painted the Mona Lisa?",
       "correct_answer": "Leonardo da Vinci",
-      "wrong_answers": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+      "wrong_answers": [
+        "Vincent van Gogh",
+        "Pablo Picasso",
+        "Claude Monet"
+      ],
       "score": 5,
       "difficulty": "medium"
     },
@@ -41,7 +57,11 @@
       "question_type": "MCQ",
       "prompt": "Which planet is known as the Red Planet?",
       "correct_answer": "Mars",
-      "wrong_answers": ["Venus", "Jupiter", "Mercury"],
+      "wrong_answers": [
+        "Venus",
+        "Jupiter",
+        "Mercury"
+      ],
       "score": 5,
       "difficulty": "easy"
     },
@@ -50,7 +70,11 @@
       "question_type": "MCQ",
       "prompt": "What is the largest mammal?",
       "correct_answer": "Blue Whale",
-      "wrong_answers": ["Elephant", "Giraffe", "Hippopotamus"],
+      "wrong_answers": [
+        "Elephant",
+        "Giraffe",
+        "Hippopotamus"
+      ],
       "score": 5,
       "difficulty": "easy"
     },
@@ -59,7 +83,11 @@
       "question_type": "MCQ",
       "prompt": "Who discovered penicillin?",
       "correct_answer": "Alexander Fleming",
-      "wrong_answers": ["Marie Curie", "Isaac Newton", "Albert Einstein"],
+      "wrong_answers": [
+        "Marie Curie",
+        "Isaac Newton",
+        "Albert Einstein"
+      ],
       "score": 5,
       "difficulty": "medium"
     },
@@ -68,7 +96,11 @@
       "question_type": "MCQ",
       "prompt": "Which country hosted the 2016 Summer Olympics?",
       "correct_answer": "Brazil",
-      "wrong_answers": ["Russia", "China", "Japan"],
+      "wrong_answers": [
+        "Russia",
+        "China",
+        "Japan"
+      ],
       "score": 5,
       "difficulty": "medium"
     },
@@ -77,9 +109,26 @@
       "question_type": "MCQ",
       "prompt": "Which language is the most spoken worldwide?",
       "correct_answer": "Mandarin Chinese",
-      "wrong_answers": ["Spanish", "English", "Hindi"],
+      "wrong_answers": [
+        "Spanish",
+        "English",
+        "Hindi"
+      ],
       "score": 5,
       "difficulty": "medium"
+    },
+    {
+      "id": "8725",
+      "prompt": "Who is the president of USA?",
+      "question_type": "mcq",
+      "correct_answer": "Joe Biden",
+      "wrong_answers": [
+        "D. Trump",
+        "H. Clinton",
+        "K. Harris"
+      ],
+      "score": "5",
+      "difficulty": "easy"
     }
   ]
 }

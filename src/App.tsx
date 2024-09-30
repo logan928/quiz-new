@@ -12,6 +12,7 @@ function App() {
         <Route path="/questions" element={<QuestionList />} />
         <Route path="/questions/:id" element={<QuestionDetails />} />
         <Route path="/questions/new" element={<QuestionForm />} />
+        <Route path="/questions/edit/:id" element={<QuestionForm />} />
       </Routes>
     </>
   );
