@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Question } from "../../types/CommonTypes";
 import { QuestionServices } from "../../services/Questions";
+import "./QuestionDetails.css";
 
 function QuestionDetails() {
   const { id } = useParams<{ id: string }>();
@@ -25,7 +26,7 @@ function QuestionDetails() {
   if (!question) return <div>Loading....</div>;
 
   return (
-    <div>
+    <div className="question-details">
       <h1>{question.prompt}</h1>
       <p>{question.question_type}</p>
       <p>{question.correct_answer}</p>
@@ -34,6 +35,9 @@ function QuestionDetails() {
       )}
       <p>{question.score}</p>
       <p>{question.difficulty}</p>
+      <Link to="/questions" className="btn btn-secondary">
+        Back to Questions
+      </Link>
     </div>
   );
 }
