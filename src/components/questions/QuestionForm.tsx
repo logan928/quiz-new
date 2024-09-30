@@ -1,13 +1,14 @@
 import { QuestionServices } from "../../services/Questions";
 import { Question } from "../../types/CommonTypes";
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 //import { Link } from "react-router-dom";
 import "./QuestionForm.css";
 
 function QuestionForm() {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
+  const location = useLocation();
 
   const [questionFormData, setQuestionFormData] = useState<
     Omit<Question, "id">
@@ -31,8 +32,28 @@ function QuestionForm() {
   }, [id]);
 
   useEffect(() => {
+    if (location.pathname === "/questions/new") {
+      const savedQuestionFormData = localStorage.getItem("formData");
+      if (savedQuestionFormData) {
+        if (savedQuestionFormData.indexOf("id") === 2) {
+          localStorage.removeItem("formData");
+          setQuestionFormData({
+            prompt: "",
+            question_type: "mcq",
+            correct_answer: "",
+            wrong_answers: [],
+            score: 0,
+            difficulty: "easy",
+          });
+        }
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     //save form data whenever a change is done
     localStorage.setItem("formData", JSON.stringify(questionFormData));
+    //console.log(JSON.stringify(questionFormData));
   }, [questionFormData]);
 
   const fetchQuestionByID = async () => {
