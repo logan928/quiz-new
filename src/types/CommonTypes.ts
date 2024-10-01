@@ -13,5 +13,5 @@ export interface Quiz {
   id: number;
   title: string;
   score: number;
-  questions: Question[];
+  questions: number[];
 }

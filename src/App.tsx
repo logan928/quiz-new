@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import QuestionList from "./components/questions/QuestionList";
 import QuestionDetails from "./components/questions/QuestionDetails";
 import QuestionForm from "./components/questions/QuestionForm";
+import QuizzesList from "./components/quiz/QuizzesList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/questions/:id" element={<QuestionDetails />} />
         <Route path="/questions/new" element={<QuestionForm />} />
         <Route path="/questions/edit/:id" element={<QuestionForm />} />
+        <Route path="/quiz" element={<QuizzesList />} />
       </Routes>
     </>
   );
