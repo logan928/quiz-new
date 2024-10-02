@@ -13,9 +13,9 @@ function RetrieveQuestionsByID({ qids }: { qids: number[] }) {
 
   const fetchQuestionsByIDs = async () => {
     try {
-      const questions = await QuestionServices.getQuestionsByIDs(qids);
-      console.log(questions.data);
-      setQuizQuestions(questions.data);
+      //   const questions = await QuestionServices.getQuestionsByIDs(qids);
+      //   console.log(questions.data);
+      //   setQuizQuestions(questions.data);
     } catch (error) {
       console.error("Error fetching questions", error);
     }

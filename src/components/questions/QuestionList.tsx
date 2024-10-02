@@ -23,7 +23,9 @@ function QuestionList() {
   const handleDelete = async (id: number) => {
     try {
       await QuestionServices.deleteQuestion(id);
-      setQuestions(questions.filter((question) => question.id !== id));
+      setQuestions(
+        questions.filter((question) => question.id !== id.toString())
+      );
     } catch (error) {
       console.error("Error deleting question", error);
     }
@@ -57,7 +59,7 @@ function QuestionList() {
                 Edit Question
               </Link>
               <button
-                onClick={() => handleDelete(question.id)}
+                onClick={() => handleDelete(Number(question.id))}
                 className="btn btn-danger"
               >
                 Delete
