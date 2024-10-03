@@ -1,7 +1,8 @@
 // src/components/PlayQuiz.tsx
 import React, { useState, useEffect } from "react";
-import { Question } from "../../types/CommonTypes";
+import { Question, Quiz } from "../../types/CommonTypes";
 import { QuestionServices } from "../../services/Questions";
+import { QuizService } from "../../services/QuizServices";
 import "./PlayQuiz.css";
 
 interface PlayQuizProps {
@@ -28,6 +29,8 @@ const PlayQuiz: React.FC<PlayQuizProps> = ({ quizId }) => {
         const allQuestions = quizQuestionsAll.data;
 
         const quizQuestionIds = [1, 2, 4, 5, 6, 7, 8]; // Todo:  retrieve these from the quiz object
+        //const quiz = fetchQuiz();
+
         const filteredQuestions = allQuestions.filter((q) =>
           quizQuestionIds.includes(parseInt(q.id))
         );
@@ -68,6 +71,24 @@ const PlayQuiz: React.FC<PlayQuizProps> = ({ quizId }) => {
       );
     }
   }, [currentQuestionIndex, questions]); // Re-shuffle only when the current question changes
+
+  const fetchQuiz = async (): Promise<Quiz | null> => {
+    try {
+      const response = await QuizService.getAllQuizzes();
+
+      // No need for await here, filter is synchronous
+      const quiz = response.data.filter((quiz) => quiz.id === quizId);
+
+      if (quiz.length > 0) {
+        return quiz[0]; // Return the first matching quiz
+      } else {
+        return null; // Return null if no quiz found
+      }
+    } catch (error) {
+      console.log("Error loading quizzes", error);
+      return null; // Handle error by returning null
+    }
+  };
 
   // Handle Answer Selection
   const handleAnswerSelection = (selectedAnswer: string) => {
